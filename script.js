@@ -4,7 +4,7 @@ let ctx = canvas.getContext('2d');
 let model;
 let isDetecting = false;
 let lastSpokenObject = ""; // Track last announced object
-let alertSound = new Audio('alert.mp3'); // Add an alert sound file
+let alertSound = new Audio('nuclear-alarm-14008.mp3'); // Add an alert sound file
 
 // Load AI Model
 async function loadModel() {
@@ -80,7 +80,7 @@ async function detectObjects() {
     }
 
     // Sound Alert if object is very close (< 0.5 meters)
-    if (distance < 0.5) {
+    if (distance < 1) {
         alertSound.play();
     }
 
