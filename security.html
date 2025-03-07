@@ -169,30 +169,35 @@
     </div>
 
     <div class="content">
-        <div class="section">
-            <h2>1. Data Privacy</h2>
-            <p>We ensure user data protection by using encrypted connections and secure authentication protocols.</p>
-        </div>
-
-        <div class="section">
-            <h2>2. Secure AI Processing</h2>
-            <p>All AI computations occur locally on the user's device, preventing unauthorized access to sensitive data.</p>
-        </div>
-
-        <div class="section">
-            <h2>3. User Authentication</h2>
-            <p>Multi-factor authentication is implemented to safeguard user access and prevent unauthorized usage.</p>
-        </div>
-
-        <div class="section">
-            <h2>4. Cybersecurity Measures</h2>
-            <p>We employ firewalls, intrusion detection systems, and regular security audits to protect against cyber threats.</p>
-        </div>
-
-        <div class="section">
-            <h2>5. Data Anonymization</h2>
-            <p>Personally identifiable information (PII) is never stored, ensuring user anonymity and compliance with privacy laws.</p>
-        </div>
+        <h1>Security Measures Implemented</h1>
+    <div class="section">
+        <h2>1. Cross-Site Scripting (XSS) Prevention</h2>
+        <p><strong>Fix:</strong> Replaced <code>innerHTML</code> with <code>textContent</code> to prevent malicious script injection.</p>
+    </div>
+    <div class="section">
+        <h2>2. Secure Camera and Microphone Access</h2>
+        <p><strong>Fix:</strong> Camera permissions now require user action instead of auto-loading.</p>
+    </div>
+    <div class="section">
+        <h2>3. Clickjacking Protection</h2>
+        <p><strong>Fix:</strong> Added a Content Security Policy (CSP) to prevent embedding in iframes.</p>
+    </div>
+    <div class="section">
+        <h2>4. Prevent Browser Caching of Sensitive Data</h2>
+        <p><strong>Fix:</strong> Implemented cache control headers to prevent storing sensitive data.</p>
+    </div>
+    <div class="section">
+        <h2>5. Content Security Policy (CSP) Implementation</h2>
+        <p><strong>Fix:</strong> Restricted JavaScript execution to scripts from the same origin.</p>
+    </div>
+    <div class="section">
+        <h2>6. Secure Voice Recognition</h2>
+        <p><strong>Fix:</strong> Voice commands now require a button press to prevent background noise activation.</p>
+    </div>
+    <div class="section">
+        <h2>7. Secure File Uploads</h2>
+        <p><strong>Fix:</strong> Recommendations include limiting file types to JPEG/PNG and restricting file size.</p>
+    </div>
     </div>
 
     <script>
